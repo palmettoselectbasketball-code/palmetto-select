@@ -18,10 +18,10 @@ export default function ContactPage() {
           </p>
 
           <a
-            href="mailto:info@palmettoselectbasketball.com"
+            href="mailto:PalmettoSelectBasketball@gmail.com"
             className="text-2xl md:text-4xl font-bold text-blue-300 hover:text-white transition break-words"
           >
-            info@palmettoselectbasketball.com
+            PalmettoSelectBasketball@gmail.com
           </a>
 
         </div>
