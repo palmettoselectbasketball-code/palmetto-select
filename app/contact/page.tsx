@@ -10,49 +10,19 @@ export default function ContactPage() {
         </h1>
 
         {/* CONTACT CARD */}
-        <div className="bg-[#0B2E84] border border-blue-300 rounded-2xl p-6 md:p-10 shadow-lg">
+        <div className="bg-[#0B2E84] border border-blue-300 rounded-2xl p-6 md:p-10 shadow-lg text-center">
 
-          <p className="text-lg md:text-2xl text-center leading-relaxed mb-10">
-            We would love to hear from you. Please reach out with any
-            questions regarding teams, tryouts, camps, partnerships,
-            or player development opportunities.
+          <p className="text-xl md:text-3xl leading-relaxed mb-8">
+            For questions regarding teams, events, partnerships,
+            or player development opportunities, please contact us at:
           </p>
 
-          {/* CONTACT FORM */}
-          <form className="flex flex-col gap-6">
-
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="p-4 rounded-lg text-black"
-            />
-
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="p-4 rounded-lg text-black"
-            />
-
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              className="p-4 rounded-lg text-black"
-            />
-
-            <textarea
-              placeholder="Your Message"
-              rows={6}
-              className="p-4 rounded-lg text-black"
-            />
-
-            <button
-              type="submit"
-              className="bg-blue-500 hover:bg-blue-600 transition text-white font-bold py-4 rounded-lg"
-            >
-              Send Message
-            </button>
-
-          </form>
+          <a
+            href="mailto:info@palmettoselectbasketball.com"
+            className="text-2xl md:text-4xl font-bold text-blue-300 hover:text-white transition break-words"
+          >
+            info@palmettoselectbasketball.com
+          </a>
 
         </div>
 

@@ -9,56 +9,13 @@ export default function RegistrationPage() {
           Registration
         </h1>
 
-        {/* REGISTRATION CARD */}
+        {/* INFO CARD */}
         <div className="bg-[#0B2E84] border border-blue-300 rounded-2xl p-6 md:p-10 shadow-lg">
 
-          <p className="text-lg md:text-2xl text-center leading-relaxed mb-8">
-            Thank you for your interest in Palmetto Select Basketball.
-            Registration information for upcoming teams, tryouts,
-            camps, and events will be posted here.
+          <p className="text-xl md:text-3xl text-center leading-relaxed">
+            Please check back later for Winter 2026–2027 team events,
+            tryout information, and registration details.
           </p>
-
-          {/* SAMPLE FORM */}
-          <form className="flex flex-col gap-6">
-
-            <input
-              type="text"
-              placeholder="Player Name"
-              className="p-4 rounded-lg text-black"
-            />
-
-            <input
-              type="text"
-              placeholder="Parent / Guardian Name"
-              className="p-4 rounded-lg text-black"
-            />
-
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="p-4 rounded-lg text-black"
-            />
-
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              className="p-4 rounded-lg text-black"
-            />
-
-            <textarea
-              placeholder="Additional Information"
-              rows={5}
-              className="p-4 rounded-lg text-black"
-            />
-
-            <button
-              type="submit"
-              className="bg-blue-500 hover:bg-blue-600 transition text-white font-bold py-4 rounded-lg"
-            >
-              Submit Registration
-            </button>
-
-          </form>
 
         </div>
 
