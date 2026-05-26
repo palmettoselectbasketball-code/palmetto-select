@@ -1,67 +1,63 @@
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
-
 export default function ContactPage() {
   return (
-    <main className="bg-[#021B4E] min-h-screen text-white">
+    <main className="min-h-screen bg-[#021B4E] text-white px-4 py-10">
 
-      <Navbar />
+      <div className="max-w-4xl mx-auto">
 
-      <section className="px-6 py-24">
+        {/* PAGE TITLE */}
+        <h1 className="text-4xl md:text-6xl font-extrabold uppercase text-center mb-10">
+          Contact Us
+        </h1>
 
-        <div className="max-w-4xl mx-auto text-center">
+        {/* CONTACT CARD */}
+        <div className="bg-[#0B2E84] border border-blue-300 rounded-2xl p-6 md:p-10 shadow-lg">
 
-          <h1 className="text-5xl md:text-7xl font-black uppercase mb-10">
-            Contact Us
-          </h1>
+          <p className="text-lg md:text-2xl text-center leading-relaxed mb-10">
+            We would love to hear from you. Please reach out with any
+            questions regarding teams, tryouts, camps, partnerships,
+            or player development opportunities.
+          </p>
 
-          <div className="bg-[#032B75] border border-blue-300 rounded-3xl p-12 shadow-2xl">
+          {/* CONTACT FORM */}
+          <form className="flex flex-col gap-6">
 
-            <h2 className="text-3xl md:text-4xl font-black uppercase mb-8">
-              Get In Touch
-            </h2>
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="p-4 rounded-lg text-black"
+            />
 
-            <p className="text-xl md:text-2xl leading-relaxed text-blue-100 mb-10">
-              For questions about Palmetto Select Basketball, upcoming
-              programs, or future registration opportunities, please contact us
-              by email.
-            </p>
+            <input
+              type="email"
+              placeholder="Email Address"
+              className="p-4 rounded-lg text-black"
+            />
 
-            <div className="mb-10">
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              className="p-4 rounded-lg text-black"
+            />
 
-              <a
-                href="mailto:PalmettoSelectBasketball@gmail.com"
-                className="inline-block bg-white text-[#021B4E] font-bold px-6 py-3 rounded-2xl text-base md:text-lg break-all hover:scale-105 transition"
-              >
-                PalmettoSelectBasketball@gmail.com
-              </a>
+            <textarea
+              placeholder="Your Message"
+              rows={6}
+              className="p-4 rounded-lg text-black"
+            />
 
-            </div>
+            <button
+              type="submit"
+              className="bg-blue-500 hover:bg-blue-600 transition text-white font-bold py-4 rounded-lg"
+            >
+              Send Message
+            </button>
 
-            <div className="mt-8">
-
-              <p className="text-blue-200 text-lg mb-4">
-                Fort Mill, South Carolina
-              </p>
-
-              <a
-                href="https://www.instagram.com/palmettoselectbasketball/"
-                target="_blank"
-                className="inline-block text-blue-100 hover:text-white text-xl font-semibold"
-              >
-                @palmettoselectbasketball
-              </a>
-
-            </div>
-
-          </div>
+          </form>
 
         </div>
 
-      </section>
-
-      <Footer />
+      </div>
 
     </main>
-  )
+  );
 }
